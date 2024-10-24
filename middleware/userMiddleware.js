@@ -1,8 +1,8 @@
-const User = require("../models/userModel");
+import User, { findOne } from "../models/userModel";
 
 const checkUserExists = async (req, res, next) => {
   const { phoneNumber } = req.body;
-  let user = await User.findOne({ phoneNumber });
+  let user = await findOne({ phoneNumber });
   if (!user) {
     user = new User({ phoneNumber });
     await user.save();
@@ -13,4 +13,4 @@ const checkUserExists = async (req, res, next) => {
   next();
 };
 
-module.exports = { checkUserExists };
+export default { checkUserExists };

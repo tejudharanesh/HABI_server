@@ -1,23 +1,28 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const jwt = require("jsonwebtoken");
-const cors = require("cors");
-const routes = require("./routes");
-const connectDB = require("./config/dbConfig");
-require("dotenv").config();
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser"; // Importing cookie-parser using ES6 syntax
+import routes from "./routes/index.js"; // Ensure to use the .js extension with ES6 modules
+import connectDB from "./config/dbConfig.js";
+import dotenv from "dotenv"; // Load environment variables using ES6 syntax
+
+dotenv.config(); // Initialize dotenv
 
 const app = express();
 
+// Middleware
+app.use(express.json());
+app.use(cookieParser()); // Add cookie parsing middleware
+
+const corsOptions = {
+  origin: "http://localhost:5173", // frontend origin
+  credentials: true, // allow sending cookies with requests
+};
+
 connectDB();
 
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
-app.use(bodyParser.json());
-app.use(express.json());
+app.use(cors(corsOptions)); // Apply CORS middleware
+app.use(bodyParser.json()); // Add body-parser middleware
 app.use("/api", routes);
 
-module.exports = app;
+export default app; // Use 'export default' instead of module.exports

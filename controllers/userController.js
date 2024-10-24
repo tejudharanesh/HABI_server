@@ -1,5 +1,5 @@
-const User = require("../models/userModel");
-const { generateToken } = require("../utils/jwtUtils");
+import User from "../models/userModel";
+import { generateToken } from "../utils/jwtUtils";
 
 // Create a new user
 const createUser = async (req, res) => {
@@ -25,4 +25,4 @@ const getProfile = (req, res) => {
   res.json({ user: req.user });
 };
 
-module.exports = { createUser, getProfile };
+export default { createUser, getProfile };

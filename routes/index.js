@@ -1,9 +1,9 @@
-const express = require("express");
-const router = express.Router();
-const otpRoutes = require("./otpRoutes");
-const userRoutes = require("./userRoute");
+import { Router } from "express";
+const router = Router();
+import otpRoutes from "./otpRoutes.js";
+import userRoutes from "./userRoute.js";
 
 router.use("/otp", otpRoutes);
 router.use("/user", userRoutes);
 
-module.exports = router;
+export default router;

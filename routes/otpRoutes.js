@@ -1,12 +1,13 @@
-const express = require("express");
-const router = express.Router();
-const { sendOtp } = require("../controllers/otpController");
-const {
+import express from "express";
+import { sendOtp } from "../controllers/otpController.js"; // Make sure to include the .js extension
+import {
   sendOtpMiddleware,
   verifyOtpMiddleware,
-} = require("../middleware/otpMiddleware");
+} from "../middleware/otpMiddleware.js"; // Include .js extension
+
+const router = express.Router();
 
 router.post("/send", sendOtpMiddleware, sendOtp);
 router.post("/validate", verifyOtpMiddleware);
 
-module.exports = router;
+export default router; // Use 'export default' instead of module.exports
