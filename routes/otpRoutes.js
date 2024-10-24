@@ -1,5 +1,5 @@
 import express from "express";
-import { sendOtp } from "../controllers/otpController.js"; // Make sure to include the .js extension
+import sendOtp from "../controllers/otpController.js"; // Make sure to include the .js extension
 import {
   sendOtpMiddleware,
   verifyOtpMiddleware,

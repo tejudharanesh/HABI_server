@@ -10,14 +10,14 @@ const validateOtp = (phoneNumber, otp) => {
   return otpStore[phoneNumber] && otpStore[phoneNumber] == otp;
 };
 
-const sendOtpMiddleware = async (req, res, next) => {
+export const sendOtpMiddleware = async (req, res, next) => {
   const { phoneNumber } = req.body;
   const otp = generateOtp(phoneNumber);
   req.otp = otp;
   next();
 };
 
-const verifyOtpMiddleware = (req, res, next) => {
+export const verifyOtpMiddleware = (req, res, next) => {
   const { phoneNumber, otp } = req.body;
   if (validateOtp(phoneNumber, otp)) {
     res.status(200).send({ success: true });
@@ -25,5 +25,3 @@ const verifyOtpMiddleware = (req, res, next) => {
     res.status(400).json({ success: false, error: "Invalid OTP" });
   }
 };
-
-module.exports = { sendOtpMiddleware, verifyOtpMiddleware };

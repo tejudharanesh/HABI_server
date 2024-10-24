@@ -1,8 +1,8 @@
-import User from "../models/userModel";
-import { generateToken } from "../utils/jwtUtils";
+import User from "../models/userModel.js";
+import generateToken from "../utils/jwtUtils.js";
 
 // Create a new user
-const createUser = async (req, res) => {
+export const createUser = async (req, res) => {
   const { name, phoneNumber, email, pinCode } = req.body;
   console.log("habiiiiiiiiiiiiii");
 
@@ -21,8 +21,6 @@ const createUser = async (req, res) => {
 };
 
 // Example of a protected route
-const getProfile = (req, res) => {
+export const getProfile = (req, res) => {
   res.json({ user: req.user });
 };
-
-export default { createUser, getProfile };

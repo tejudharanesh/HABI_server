@@ -1,4 +1,4 @@
-import User, { findOne } from "../models/userModel";
+import User, { findOne } from "../models/userModel.js";
 
 const checkUserExists = async (req, res, next) => {
   const { phoneNumber } = req.body;

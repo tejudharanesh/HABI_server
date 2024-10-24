@@ -1,5 +1,5 @@
-import { verify } from "jsonwebtoken";
-import { findById } from "../models/userModel";
+import verify from "jsonwebtoken";
+import findById from "../models/userModel.js";
 const secret = process.env.JWT_SECRET;
 
 const authMiddleware = async (req, res, next) => {

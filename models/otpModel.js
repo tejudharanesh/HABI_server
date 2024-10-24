@@ -12,7 +12,7 @@ const deleteOTP = (phoneNumber) => {
   delete otpStore[phoneNumber];
 };
 
-module.exports = {
+export default {
   generateOTP,
   storeOTP,
   getOTP,

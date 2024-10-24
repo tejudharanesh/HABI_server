@@ -1,4 +1,5 @@
-import { sign, verify } from "jsonwebtoken";
+import pkg from "jsonwebtoken";
+const { sign, verify } = pkg;
 const secret = process.env.JWT_SECRET;
 
 const generateToken = (user) => {
