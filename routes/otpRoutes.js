@@ -5,9 +5,9 @@ import {
   verifyOtpMiddleware,
 } from "../middleware/otpMiddleware.js"; // Include .js extension
 
-const router = express.Router();
+const otpRouter = express.Router();
 
-router.post("/send", sendOtpMiddleware, sendOtp);
-router.post("/validate", verifyOtpMiddleware);
+otpRouter.post("/send", sendOtpMiddleware, sendOtp);
+otpRouter.post("/validate", verifyOtpMiddleware);
 
-export default router; // Use 'export default' instead of module.exports
+export default otpRouter; // Use 'export default' instead of module.exports

@@ -1,9 +1,9 @@
 import { Router } from "express";
 const router = Router();
-import otpRoutes from "./otpRoutes.js";
-import userRoutes from "./userRoute.js";
+import otpRouter from "./otpRoutes.js";
+import userRouter from "./userRoute.js";
 
-router.use("/otp", otpRoutes);
-router.use("/user", userRoutes);
+router.use("/otp", otpRouter);
+router.use("/user", userRouter);
 
 export default router;
