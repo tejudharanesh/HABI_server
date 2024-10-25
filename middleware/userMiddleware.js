@@ -6,7 +6,7 @@ const checkUserExists = async (req, res, next) => {
   if (!user) {
     user = new User({ phoneNumber });
     await user.save();
-    console.log("from userMiddlewar");
+    console.log("from userMiddleware");
     console.log(user);
   }
   req.user = user;

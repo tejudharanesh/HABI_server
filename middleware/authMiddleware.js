@@ -1,25 +1,44 @@
-import verify from "jsonwebtoken";
-import findById from "../models/userModel.js";
-const secret = process.env.JWT_SECRET;
+import { verifyToken } from "../utils/jwtUtils.js";
+const otpStore = {};
 
-const authMiddleware = async (req, res, next) => {
-  const token = req.headers.authorization?.split(" ")[1];
+const generateOtp = (phoneNumber) => {
+  const otp = Math.floor(1000 + Math.random() * 9000);
+  otpStore[phoneNumber] = otp;
+  return otp;
+};
 
-  if (!token) {
-    return res.status(401).json({ message: "Authorization token required" });
-  }
+const validateOtp = (phoneNumber, otp) => {
+  return otpStore[phoneNumber] && otpStore[phoneNumber] == otp;
+};
 
-  try {
-    const decoded = verify(token, secret);
-    const user = await findById(decoded.id);
-    if (!user) {
-      return res.status(401).json({ message: "User not found" });
-    }
-    req.user = user;
-    next();
-  } catch (error) {
-    return res.status(401).json({ message: "Invalid token" });
+export const sendOtpMiddleware = async (req, res, next) => {
+  const { phoneNumber } = req.body;
+  const otp = generateOtp(phoneNumber);
+  req.otp = otp;
+  next();
+};
+
+export const verifyOtpMiddleware = (req, res, next) => {
+  const { phoneNumber, otp } = req.body;
+  if (validateOtp(phoneNumber, otp)) {
+    res.status(200).send({ success: true });
+  } else {
+    res.status(400).json({ success: false, error: "Invalid OTP" });
   }
 };
 
-export default authMiddleware;
+export const verifyTokenMiddleware = (req, res, next) => {
+  const token = req.cookies.token;
+  console.log(token);
+
+  if (!token)
+    return res.status(401).json({ message: "No token, authorization denied" });
+
+  try {
+    const decoded = verifyToken(token); // Use your verifyToken utility
+    req.user = decoded.user;
+    next();
+  } catch (err) {
+    res.status(401).json({ message: "Token is not valid" });
+  }
+};
