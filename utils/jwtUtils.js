@@ -1,19 +1,20 @@
 import pkg from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config();
+
 const { sign, verify } = pkg;
 const secret = process.env.JWT_SECRET;
 
-const generateToken = (user) => {
+export const generateToken = (user) => {
   const payload = {
     name: user.name,
     phoneNumber: user.phoneNumber,
     email: user.email,
   };
 
-  return sign(payload, secret, { expiresIn: "1m" });
+  return sign(payload, secret);
 };
 
-const verifyToken = (token) => {
+export const verifyToken = (token) => {
   return verify(token, secret);
 };
-
-export default { generateToken, verifyToken };

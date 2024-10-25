@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import bodyParser from "body-parser";
 import cookieParser from "cookie-parser"; // Importing cookie-parser using ES6 syntax
 import routes from "./routes/index.js"; // Ensure to use the .js extension with ES6 modules
 import connectDB from "./config/dbConfig.js";
@@ -11,7 +10,9 @@ dotenv.config(); // Initialize dotenv
 const app = express();
 
 // Middleware
-app.use(express.json());
+app.use(express.json()); // Built-in middleware for parsing JSON
+app.use(express.urlencoded({ extended: true })); // For parsing URL-encoded form data
+
 app.use(cookieParser()); // Add cookie parsing middleware
 
 const corsOptions = {
@@ -22,7 +23,6 @@ const corsOptions = {
 connectDB();
 
 app.use(cors(corsOptions)); // Apply CORS middleware
-app.use(bodyParser.json()); // Add body-parser middleware
 app.use("/api", routes);
 
 export default app; // Use 'export default' instead of module.exports
