@@ -28,7 +28,7 @@ export const verifyOtpMiddleware = (req, res, next) => {
 };
 
 export const verifyTokenMiddleware = (req, res, next) => {
-  const token = req.cookies.token;
+  const token = req.cookies.authToken;
   console.log("token", token);
 
   if (!token)
@@ -36,7 +36,10 @@ export const verifyTokenMiddleware = (req, res, next) => {
 
   try {
     const decoded = verifyToken(token); // Use your verifyToken utility
-    req.user = decoded.user;
+    console.log("Decoded token:", decoded); // Log the entire decoded token
+
+    req.user = decoded;
+
     next();
   } catch (err) {
     res.status(401).json({ message: "Token is not valid" });

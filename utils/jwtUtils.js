@@ -10,11 +10,14 @@ export const generateToken = (user) => {
     name: user.name,
     phoneNumber: user.phoneNumber,
     email: user.email,
+    pinCode: user.pinCode,
   };
 
   return sign(payload, secret);
 };
 
 export const verifyToken = (token) => {
+  console.log("here", token);
+
   return verify(token, secret);
 };
