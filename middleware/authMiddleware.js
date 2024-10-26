@@ -29,7 +29,7 @@ export const verifyOtpMiddleware = (req, res, next) => {
 
 export const verifyTokenMiddleware = (req, res, next) => {
   const token = req.cookies.token;
-  console.log(token);
+  console.log("token", token);
 
   if (!token)
     return res.status(401).json({ message: "No token, authorization denied" });
