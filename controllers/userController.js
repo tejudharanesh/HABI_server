@@ -8,6 +8,7 @@ export const createUser = async (req, res) => {
 
   const { name, phoneNumber, email, pinCode, address } = req.body;
   const clientId = name.slice(0, 4).toLowerCase() + phoneNumber.slice(-4);
+  console.log(clientId);
 
   try {
     const newUser = new User({
@@ -15,8 +16,8 @@ export const createUser = async (req, res) => {
       name,
       phoneNumber,
       email,
-      pinCode,
-      address,
+      sitePinCode: pinCode,
+      currentLocation: address,
     });
     await newUser.save();
 

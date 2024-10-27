@@ -1,6 +1,5 @@
 import { verifyToken } from "../utils/jwtUtils.js";
-const otpStore = {6366306244:2132,};
-
+const otpStore = { 6366306244: 2132 };
 
 const generateOtp = (phoneNumber) => {
   // Remove +91 if it exists and take only the last 10 digits
@@ -37,6 +36,7 @@ export const verifyOtpMiddleware = (req, res, next) => {
 export const verifyTokenMiddleware = (req, res, next) => {
   const token = req.cookies.authToken;
   console.log("token", token);
+  b;
 
   if (!token)
     return res.status(401).json({ message: "No token, authorization denied" });
