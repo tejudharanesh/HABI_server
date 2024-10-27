@@ -6,10 +6,18 @@ import { generateToken } from "../utils/jwtUtils.js";
 export const createUser = async (req, res) => {
   console.log("Request Body: ", req.body); // Log incoming body
 
-  const { name, phoneNumber, email, pinCode } = req.body;
+  const { name, phoneNumber, email, pinCode, address } = req.body;
+  const clientId = name.slice(0, 4).toLowerCase() + phoneNumber.slice(-4);
 
   try {
-    const newUser = new User({ name, phoneNumber, email, pinCode });
+    const newUser = new User({
+      clientId,
+      name,
+      phoneNumber,
+      email,
+      pinCode,
+      address,
+    });
     await newUser.save();
 
     const token = generateToken(newUser);
@@ -29,7 +37,10 @@ export const createUser = async (req, res) => {
   }
 };
 
-// Example of a protected route
+// Get a user's profile
 export const getProfile = (req, res) => {
-  res.json({ user: req.user });
+  // The user profile is already attached to req.user by the middleware
+  res
+    .status(200)
+    .json({ message: "User profile fetched successfully", profile: req.user });
 };

@@ -1,6 +1,10 @@
 import { Schema, model } from "mongoose";
 
 const userSchema = new Schema({
+  clientId: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -8,15 +12,23 @@ const userSchema = new Schema({
   phoneNumber: {
     type: String,
     required: true,
-    unique: false,
+    unique: true,
   },
   email: {
     type: String,
     required: true,
   },
-  pinCode: {
+  sitePinCode: {
     type: String,
     required: true,
+  },
+  currentLocation: {
+    type: String,
+    required: true,
+  },
+  status: {
+    type: String,
+    default: "lead",
   },
 });
 
