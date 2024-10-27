@@ -40,7 +40,9 @@ export const createUser = async (req, res) => {
 // Get a user's profile
 export const getProfile = (req, res) => {
   // The user profile is already attached to req.user by the middleware
-  res
-    .status(200)
-    .json({ message: "User profile fetched successfully", profile: req.user });
+  res.status(200).json({
+    message: "User profile fetched successfully",
+    success: true,
+    profile: req.user,
+  });
 };

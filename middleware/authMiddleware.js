@@ -1,5 +1,6 @@
 import { verifyToken } from "../utils/jwtUtils.js";
-const otpStore = {};
+const otpStore = {6366306244:2132,};
+
 
 const generateOtp = (phoneNumber) => {
   // Remove +91 if it exists and take only the last 10 digits
@@ -27,13 +28,8 @@ export const verifyOtpMiddleware = (req, res, next) => {
   console.log(phoneNumber, otp);
 
   if (validateOtp(phoneNumber, otp)) {
-    console.log(
-      ":jhbhbbhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-    );
-
     res.status(200).send({ success: true });
   } else {
-    console.log(":jhbeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
     res.status(400).json({ success: false, error: "Invalid OTP" });
   }
 };

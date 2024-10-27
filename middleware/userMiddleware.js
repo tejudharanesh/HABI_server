@@ -3,14 +3,19 @@ import User from "../models/userModel.js";
 
 export const checkUserExists = async (req, res, next) => {
   try {
-    const { phoneNumber } = req.query;
+    const phoneNumber = req.query.phoneNumber;
     console.log("dfkjfjikgn", phoneNumber);
 
     // Check if the user exists based on the provided clientId
     const user = await User.findOne({ phoneNumber });
+    console.log("nekkddldldmd,", user);
 
     if (!user) {
-      return res.status(404).json({ message: "User profile not found" });
+      console.log("user not found");
+
+      return res
+        .status(200)
+        .json({ success: false, message: "User profile not found" });
     }
 
     // Attach the user to the request object for access in the controller
