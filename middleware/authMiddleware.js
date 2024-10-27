@@ -2,12 +2,16 @@ import { verifyToken } from "../utils/jwtUtils.js";
 const otpStore = {};
 
 const generateOtp = (phoneNumber) => {
+  // Remove +91 if it exists and take only the last 10 digits
+  phoneNumber = phoneNumber.slice(-10);
   const otp = Math.floor(1000 + Math.random() * 9000);
   otpStore[phoneNumber] = otp;
   return otp;
 };
 
 const validateOtp = (phoneNumber, otp) => {
+  console.log(otpStore);
+
   return otpStore[phoneNumber] && otpStore[phoneNumber] == otp;
 };
 
@@ -20,9 +24,16 @@ export const sendOtpMiddleware = async (req, res, next) => {
 
 export const verifyOtpMiddleware = (req, res, next) => {
   const { phoneNumber, otp } = req.body;
+  console.log(phoneNumber, otp);
+
   if (validateOtp(phoneNumber, otp)) {
+    console.log(
+      ":jhbhbbhbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    );
+
     res.status(200).send({ success: true });
   } else {
+    console.log(":jhbeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
     res.status(400).json({ success: false, error: "Invalid OTP" });
   }
 };

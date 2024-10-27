@@ -3,7 +3,8 @@ import User from "../models/userModel.js";
 
 export const checkUserExists = async (req, res, next) => {
   try {
-    const { phoneNumber } = req.body;
+    const { phoneNumber } = req.query;
+    console.log("dfkjfjikgn", phoneNumber);
 
     // Check if the user exists based on the provided clientId
     const user = await User.findOne({ phoneNumber });
