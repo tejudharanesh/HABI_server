@@ -40,10 +40,22 @@ export const createUser = async (req, res) => {
 
 // Get a user's profile
 export const getProfile = (req, res) => {
+  const token = generateToken(req.user);
+  console.log("Generated Token:", token); // This should log the token to the console
+
   // The user profile is already attached to req.user by the middleware
-  res.status(200).json({
-    message: "User profile fetched successfully",
-    success: true,
-    profile: req.user,
-  });
+
+  res
+    .cookie("authToken", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "strict",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    })
+    .status(200)
+    .json({
+      message: "User profile fetched successfully",
+      success: true,
+      profile: req.user,
+    });
 };
