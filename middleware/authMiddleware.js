@@ -29,7 +29,9 @@ export const verifyOtpMiddleware = (req, res, next) => {
   if (validateOtp(phoneNumber, otp)) {
     res.status(200).send({ success: true });
   } else {
-    res.status(400).json({ success: false, error: "Invalid OTP" });
+    res
+      .status(400)
+      .json({ success: false, message: "invalid OTP", error: "Invalid OTP" });
   }
 };
 

@@ -32,7 +32,7 @@ export const createUser = async (req, res) => {
         maxAge: 7 * 24 * 60 * 60 * 1000,
       })
       .status(201)
-      .json({ user: newUser });
+      .json({ success: true, user: newUser });
   } catch (error) {
     res.status(500).json({ message: "Server Error", error });
   }

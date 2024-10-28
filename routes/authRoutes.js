@@ -13,6 +13,6 @@ otpRouter.post("/validate", verifyOtpMiddleware);
 otpRouter.get("/verify", verifyTokenMiddleware, (req, res) => {
   // This endpoint assumes the token is valid and `req.user` is populated
 
-  res.status(200).json({ user: req.user });
+  res.status(200).json({ success: true, user: req.user });
 });
 export default otpRouter; // Use 'export default' instead of module.exports
