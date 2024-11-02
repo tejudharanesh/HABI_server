@@ -36,11 +36,14 @@ export const verifyOtpMiddleware = (req, res, next) => {
 };
 
 export const verifyTokenMiddleware = (req, res, next) => {
+
   const token = req.cookies.authToken;
   console.log("token", token);
 
   if (!token)
-    return res.status(401).json({ message: "No token, authorization denied" });
+    return res
+      .status(200)
+      .json({ success: false, message: "No token, authorization denied" });
 
   try {
     const decoded = verifyToken(token); // Use your verifyToken utility
