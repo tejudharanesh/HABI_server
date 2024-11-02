@@ -10,7 +10,7 @@ const otpRouter = express.Router();
 
 otpRouter.post("/send", sendOtpMiddleware, sendOtp);
 otpRouter.post("/validate", verifyOtpMiddleware);
-otpRouter.get("/verify", verifyTokenMiddleware, (req, res) => {
+otpRouter.get("/authenticate", verifyTokenMiddleware, (req, res) => {
   // This endpoint assumes the token is valid and `req.user` is populated
 
   res.status(200).json({ success: true, user: req.user });

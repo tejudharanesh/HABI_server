@@ -36,7 +36,6 @@ export const verifyOtpMiddleware = (req, res, next) => {
 };
 
 export const verifyTokenMiddleware = (req, res, next) => {
-
   const token = req.cookies.authToken;
   console.log("token", token);
 
