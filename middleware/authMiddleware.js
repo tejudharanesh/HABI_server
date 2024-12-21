@@ -1,4 +1,5 @@
 import { verifyToken } from "../utils/jwtUtils.js";
+import User from "../models/userModel.js";
 const otpStore = {};
 
 const generateOtp = (phoneNumber) => {
@@ -12,11 +13,18 @@ const generateOtp = (phoneNumber) => {
 const validateOtp = (phoneNumber, otp) => {
   console.log(otpStore);
 
-  return otpStore[phoneNumber] && otpStore[phoneNumber] == otp;
+  if (otpStore[phoneNumber] && otpStore[phoneNumber] == otp) {
+    // Delete the OTP after successful validation
+    delete otpStore[phoneNumber];
+    return true;
+  }
+  return false;
 };
 
 export const sendOtpMiddleware = async (req, res, next) => {
   const { phoneNumber } = req.body;
+  console.log(phoneNumber);
+
   const otp = generateOtp(phoneNumber);
   req.otp = otp;
   next();
@@ -27,7 +35,12 @@ export const verifyOtpMiddleware = (req, res, next) => {
   console.log(phoneNumber, otp);
 
   if (validateOtp(phoneNumber, otp)) {
-    res.status(200).send({ success: true });
+    const user = new User({
+      phoneNumber,
+    });
+
+    user.save();
+    res.status(200).json({ user, success: true, message: "OTP verified" });
   } else {
     res
       .status(400)
@@ -35,23 +48,33 @@ export const verifyOtpMiddleware = (req, res, next) => {
   }
 };
 
-export const verifyTokenMiddleware = (req, res, next) => {
-  const token = req.cookies.authToken;
-  console.log("token", token);
-
-  if (!token)
-    return res
-      .status(200)
-      .json({ success: false, message: "No token, authorization denied" });
-
+export const protectedRoute = async (req, res, next) => {
   try {
-    const decoded = verifyToken(token); // Use your verifyToken utility
-    console.log("Decoded token:", decoded); // Log the entire decoded token
+    const token = req.cookies.token;
 
-    req.user = decoded;
+    if (!token) {
+      return res
+        .status(401)
+        .json({ error: "Unauthorized : No token Provided" });
+    }
 
+    const decoded = verifyToken(token);
+
+    if (!decoded) {
+      return res.status(401).json({ error: "Unauthorized : Invalid token" });
+    }
+
+    const user = await User.findById(decoded.userId);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    req.user = user;
     next();
-  } catch (err) {
-    res.status(401).json({ message: "Token is not valid" });
+  } catch (error) {
+    console.log("error in protected Route in middleware", error.message);
+    return res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
+export const completeProfileMiddleware = async (req, res, next) => {};

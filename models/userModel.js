@@ -1,36 +1,50 @@
 import { Schema, model } from "mongoose";
 
-const userSchema = new Schema({
-  clientId: {
-    type: String,
-    required: true,
+const userSchema = new Schema(
+  {
+    clientId: {
+      type: String,
+      default: "",
+    },
+    name: {
+      type: String,
+      default: "",
+    },
+    phoneNumber: {
+      type: String,
+      unique: true,
+    },
+    email: {
+      type: String,
+      default: "",
+    },
+    sitePinCode: {
+      type: String,
+      default: "",
+    },
+    currentLocation: {
+      type: String,
+      default: "",
+    },
+    status: {
+      type: String,
+      default: "lead",
+    },
+    coverImage: {
+      type: String,
+      default: "",
+    },
+    profileImage: {
+      type: String,
+      default: "",
+    },
+    isCompletedProfile: {
+      type: Boolean,
+      default: false,
+    },
   },
-  name: {
-    type: String,
-    required: true,
-  },
-  phoneNumber: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  email: {
-    type: String,
-    required: true,
-  },
-  sitePinCode: {
-    type: String,
-    required: true,
-  },
-  currentLocation: {
-    type: String,
-    required: true,
-  },
-  status: {
-    type: String,
-    default: "lead",
-  },
-});
+  { timestamps: true }
+);
 
 const User = model("User", userSchema);
 
