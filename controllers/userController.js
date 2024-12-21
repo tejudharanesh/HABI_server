@@ -1,6 +1,6 @@
 // In userController.js
 import User from "../models/userModel.js";
-import { generateToken } from "../utils/jwtUtils.js";
+import { generateTokenAndSetCookie } from "../utils/jwtUtils.js";
 
 // Create a new user and set JWT as HTTP-only cookie
 export const createUser = async (req, res) => {

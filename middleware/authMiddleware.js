@@ -1,4 +1,4 @@
-import { verifyToken } from "../utils/jwtUtils.js";
+import { verifyToken, generateTokenAndSetCookie } from "../utils/jwtUtils.js";
 import User from "../models/userModel.js";
 const otpStore = {};
 
@@ -26,6 +26,7 @@ export const sendOtpMiddleware = async (req, res, next) => {
   console.log(phoneNumber);
 
   const otp = generateOtp(phoneNumber);
+
   req.otp = otp;
   next();
 };
@@ -40,6 +41,9 @@ export const verifyOtpMiddleware = (req, res, next) => {
     });
 
     user.save();
+
+    generateTokenAndSetCookie(user, res);
+
     res.status(200).json({ user, success: true, message: "OTP verified" });
   } else {
     res
@@ -77,4 +81,6 @@ export const protectedRoute = async (req, res, next) => {
   }
 };
 
-export const completeProfileMiddleware = async (req, res, next) => {};
+export const completeProfileMiddleware = async (req, res, next) => {
+  const { name, phoneNumber, email, pinCode } = req.body;
+};
