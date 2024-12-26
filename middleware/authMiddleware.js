@@ -21,34 +21,57 @@ const validateOtp = (phoneNumber, otp) => {
   return false;
 };
 
+// Middleware to send OTP
 export const sendOtpMiddleware = async (req, res, next) => {
-  const { phoneNumber } = req.body;
-  console.log(phoneNumber);
+  try {
+    const { phoneNumber } = req.body;
+    console.log(phoneNumber);
 
-  const otp = generateOtp(phoneNumber);
-
-  req.otp = otp;
-  next();
+    const otp = generateOtp(phoneNumber);
+    req.otp = otp;
+    next();
+  } catch (error) {
+    console.error("Error in send OTP middleware:", error);
+    res
+      .status(500)
+      .json({ success: false, message: "Internal Server Error", error });
+  }
 };
 
-export const verifyOtpMiddleware = (req, res, next) => {
-  const { phoneNumber, otp } = req.body;
-  console.log(phoneNumber, otp);
+export const verifyOtpMiddleware = async (req, res, next) => {
+  try {
+    const { phoneNumber, otp } = req.body;
+    console.log(phoneNumber, otp);
 
-  if (validateOtp(phoneNumber, otp)) {
-    const user = new User({
-      phoneNumber,
-    });
+    if (validateOtp(phoneNumber, otp)) {
+      // Check if user already exists
+      let user = await User.findOne({ phoneNumber });
 
-    user.save();
+      if (!user) {
+        // If user doesn't exist, create a new user
+        user = new User({
+          phoneNumber,
+        });
 
-    generateTokenAndSetCookie(user, res);
+        await user.save();
+      }
 
-    res.status(200).json({ user, success: true, message: "OTP verified" });
-  } else {
+      // Generate token and set it in the cookie
+      generateTokenAndSetCookie(user, res);
+
+      return res
+        .status(200)
+        .json({ user, success: true, message: "OTP verified" });
+    } else {
+      return res
+        .status(400)
+        .json({ success: false, message: "Invalid OTP", error: "Invalid OTP" });
+    }
+  } catch (error) {
+    console.error("Error in OTP verification middleware:", error);
     res
-      .status(400)
-      .json({ success: false, message: "invalid OTP", error: "Invalid OTP" });
+      .status(500)
+      .json({ success: false, message: "Internal Server Error", error });
   }
 };
 
@@ -81,6 +104,55 @@ export const protectedRoute = async (req, res, next) => {
   }
 };
 
+// Complete Profile Middleware
 export const completeProfileMiddleware = async (req, res, next) => {
-  const { name, phoneNumber, email, pinCode } = req.body;
+  try {
+    const { name, email, pinCode, sitePinCode, currentLocation } = req.body;
+
+    // `req.user` is set by the protectedRoute middleware
+    const user = req.user;
+
+    if (!user) {
+      return res.status(500).json({
+        success: false,
+        message:
+          "User not found in request. Ensure protected route is working.",
+      });
+    }
+
+    // Validate required fields
+    if (!name || !email || !pinCode || sitePinCode || currentLocation) {
+      return res
+        .status(400)
+        .json({ success: false, message: "All fields are required" });
+    }
+
+    // Generate clientId
+    const clientId = `${name.slice(0, 4).toUpperCase()}${user.phoneNumber.slice(
+      -4
+    )}`;
+
+    // Append data to the user object
+    user.clientId = clientId;
+    user.name = name;
+    user.email = email;
+    user.pinCode = pinCode;
+    user.sitePinCode = sitePinCode;
+    user.currentLocation = currentLocation;
+    user.isCompletedProfile = true;
+
+    // Save the updated user
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Profile updated successfully",
+      user,
+    });
+  } catch (error) {
+    console.error("Error in complete profile middleware:", error.message);
+    res
+      .status(500)
+      .json({ success: false, message: "Internal Server Error", error });
+  }
 };

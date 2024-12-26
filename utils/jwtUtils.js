@@ -6,7 +6,7 @@ const { sign, verify } = pkg;
 const secret = process.env.JWT_SECRET;
 
 export const generateTokenAndSetCookie = (userId, res) => {
-  const token = jwt.sign({ userId }, process.env.SECRET_KEY, {
+  const token = sign({ userId }, secret, {
     expiresIn: "15d",
   });
   res.cookie("token", token, {
