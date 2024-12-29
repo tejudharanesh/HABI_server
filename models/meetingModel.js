@@ -1,8 +1,8 @@
-import { schema, model, Schema } from "mongoose";
+import mongoose from "mongoose";
 
-const meetingSchema = new schema({
+const meetingSchema = new mongoose.Schema({
   clientId: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     Ref: "User",
     required: true,
   },
@@ -29,6 +29,6 @@ const meetingSchema = new schema({
   },
 });
 
-const meetingModel = model("Meeting", meetingSchema);
+const meetingModel = mongoose.model("Meeting", meetingSchema);
 
 export default meetingModel;
