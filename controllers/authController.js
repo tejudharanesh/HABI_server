@@ -44,8 +44,6 @@ export const completeProfile = async (req, res) => {
     }
     console.log(user);
 
-    // Validate required fields
-
     // Generate clientId
     const clientId = `${name.slice(0, 4).toUpperCase()}${user.phoneNumber.slice(
       -4

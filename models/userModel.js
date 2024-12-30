@@ -30,6 +30,10 @@ const userSchema = new Schema(
       type: String,
       default: "lead",
     },
+    level: {
+      type: String,
+      default: "level 0",
+    },
     coverImage: {
       type: String,
       default: "",

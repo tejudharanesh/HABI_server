@@ -1,0 +1,151 @@
+project_cover_image
+project_manager
+starting_date
+
+stages{
+    stage_name
+    duration
+    progress (0 t0 100)
+    photos
+    video
+    status
+    manager_approved
+    client_approved
+    is_Delay
+    delay_reason
+    delay_duration
+}
+  
+
+import Project from "../models/project.model"; // Assuming your model is in the 'models' directory
+import Client from "../models/client.model"; // Assuming there's a Client model for client validation
+
+/**
+ * Create a new project and save it to the database.
+ * Validates the client existence based on clientId.
+ */
+export const createProject = async (req, res) => {
+  try {
+    const {
+      clientId,
+      name,
+      phoneNumber,
+      email,
+      currentLocation,
+      projectName,
+      startDate,
+      projectManager,
+      projectCost,
+      dimension,
+      floor,
+      SiteLocation,
+      siteLocationLink,
+      Architect,
+      siteSupervisor,
+      substages,
+    } = req.body;
+
+    // Check if the client exists
+    const existingClient = await Client.findById(clientId);
+    if (!existingClient) {
+      return res.status(404).json({ message: "Client not found." });
+    }
+
+    // Create a new project instance
+    const newProject = new Project({
+      clientId,
+      name,
+      phoneNumber,
+      email,
+      currentLocation,
+      projectName,
+      startDate,
+      projectManager,
+      projectCost,
+      dimension,
+      floor,
+      SiteLocation,
+      siteLocationLink,
+      Architect,
+      siteSupervisor,
+      substages: substages || [],
+    });
+
+    // Save the project to the database
+    const savedProject = await newProject.save();
+
+    res.status(201).json({
+      message: "Project created successfully.",
+      project: savedProject,
+    });
+  } catch (error) {
+    console.error("Error creating project:", error);
+    res.status(500).json({ message: "Internal server error.", error: error.message });
+  }
+};
+
+/**
+ * Add a stage with substages to an existing project.
+ */
+export const addArchitecturalConceptDesignStage = async (req, res) => {
+  try {
+    const { projectId } = req.params;
+
+    // Define the new stage with substages
+    const newStage = {
+      name: "Architectural Concept Design",
+      nestedSubtages: [
+        {
+          stageName: "Initial Sketches",
+          duration: 5,
+          progress: 0,
+          status: "ongoing",
+        },
+        {
+          stageName: "3D Modeling",
+          duration: 10,
+          progress: 0,
+          status: "ongoing",
+        },
+        {
+          stageName: "Material Selection",
+          duration: 3,
+          progress: 0,
+          status: "ongoing",
+        },
+        {
+          stageName: "Review and Feedback",
+          duration: 7,
+          progress: 0,
+          status: "ongoing",
+        },
+        {
+          stageName: "Final Presentation",
+          duration: 2,
+          progress: 0,
+          status: "ongoing",
+        },
+      ],
+    };
+
+    // Find the project by ID and update it
+    const updatedProject = await Project.findByIdAndUpdate(
+      projectId,
+      { $push: { substages: newStage } },
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedProject) {
+      return res.status(404).json({ message: "Project not found." });
+    }
+
+    res.status(200).json({
+      message: "Stage added successfully.",
+      project: updatedProject,
+    });
+  } catch (error) {
+    console.error("Error adding stage:", error);
+    res.status(500).json({ message: "Internal server error.", error: error.message });
+  }
+};
+
