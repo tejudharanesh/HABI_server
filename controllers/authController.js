@@ -75,6 +75,54 @@ export const completeProfile = async (req, res) => {
   }
 };
 
+// export const uploadSiteImages = async (req, res) => {
+//   try {
+//     const userId = req.user.id; // User from protectRoute middleware
+//     const { files } = req;
+
+//     if (!files || files.length > 4) {
+//       return res
+//         .status(400)
+//         .json({ message: "You can upload a maximum of 4 images." });
+//     }
+
+//     // Fetch the user from the database
+//     const user = await User.findById(userId);
+//     if (!user) {
+//       return res.status(404).json({ message: "User not found." });
+//     }
+
+//     // Remove existing images from Cloudinary
+//     if (user.sitePhotos.length > 0) {
+//       for (const photo of user.sitePhotos) {
+//         const publicId = photo.split("/").pop().split(".")[0]; // Extract publicId
+//         await cloudinary.uploader.destroy(publicId);
+//       }
+//     }
+
+//     // Upload new images to Cloudinary
+//     const uploadedImages = [];
+//     for (const file of files) {
+//       const result = await cloudinary.uploader.upload(file.path, {
+//         folder: "site_images",
+//       });
+//       uploadedImages.push(result.secure_url);
+//     }
+
+//     // Update user in the database
+//     user.sitePhotos = uploadedImages;
+//     await user.save();
+
+//     res.status(200).json({
+//       message: "Images uploaded successfully.",
+//       sitePhotos: user.sitePhotos,
+//     });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ message: "An error occurred." });
+//   }
+// };
+
 export const logout = async (req, res) => {
   try {
     res.cookie("token", "", { maxAge: 0 });

@@ -46,6 +46,10 @@ const userSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    sitePhotos: {
+      type: [String],
+      default: [], // Default to an empty array
+    },
   },
   { timestamps: true }
 );
