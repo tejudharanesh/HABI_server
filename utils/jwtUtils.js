@@ -18,7 +18,6 @@ export const generateTokenAndSetCookie = (userId, res) => {
 };
 
 export const verifyToken = (token) => {
-  console.log("here", token);
 
   return verify(token, secret);
 };

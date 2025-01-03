@@ -76,8 +76,11 @@ export const verifyOtpMiddleware = async (req, res, next) => {
 };
 
 export const protectedRoute = async (req, res, next) => {
+  console.log("hello");
+
   try {
-    const token = req.cookies.token;
+    const token = req.cookies?.token;
+    console.log(token);
 
     if (!token) {
       return res
