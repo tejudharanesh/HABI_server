@@ -27,6 +27,10 @@ const meetingSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  type: {
+    type: String,
+    default: "home",
+  },
 });
 
 const meetingModel = mongoose.model("Meeting", meetingSchema);
