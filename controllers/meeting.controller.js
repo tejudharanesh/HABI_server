@@ -4,22 +4,20 @@ import Meeting from "../models/meetingModel.js";
 export const getAllMeetings = async (req, res) => {
   try {
     const currentDate = new Date();
-
-    // Extract current date and time components
-    const currentDateString = currentDate.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    const currentTimeString = currentDate.toLocaleTimeString("en-US", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-    });
-
     // Find all meetings with a date greater than the current date
-    const upcomingMeetings = await Meeting.find();
-
+    const upcomingMeetings = await Meeting.find({
+      $expr: {
+        $gt: [
+          {
+            $dateFromString: {
+              dateString: { $concat: ["$date", " ", "$time"] }, // Combine date and time
+              format: "%B %d, %Y %I:%M %p", // Format based on stored values
+            },
+          },
+          currentDate,
+        ],
+      },
+    });
     // Sort meetings by date and time
     upcomingMeetings.sort((a, b) => {
       const dateA = new Date(`${a.date} ${a.time}`);
@@ -41,16 +39,6 @@ export const getClientMeeting = async (req, res) => {
   try {
     const { _id: clientId } = req.user;
     const currentDate = new Date();
-    const currentDateString = currentDate.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    const currentTimeString = currentDate.toLocaleTimeString("en-US", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-    });
 
     // Find meetings matching the clientId and date/time criteria
     const clientMeetings = await Meeting.find({
