@@ -6,17 +6,6 @@ export const getAllMeetings = async (req, res) => {
     const currentDate = new Date();
     // Find all meetings with a date greater than the current date
     const upcomingMeetings = await Meeting.find({
-      $expr: {
-        $gt: [
-          {
-            $dateFromString: {
-              dateString: { $concat: ["$date", " ", "$time"] }, // Combine date and time
-              format: "%B %d, %Y %I:%M %p", // Format based on stored values
-            },
-          },
-          currentDate,
-        ],
-      },
     });
     // Sort meetings by date and time
     upcomingMeetings.sort((a, b) => {
