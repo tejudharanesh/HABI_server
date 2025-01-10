@@ -1,4 +1,3 @@
-import User from "../models/userModel.js";
 import Meeting from "../models/meetingModel.js";
 
 export const getAllMeetings = async (req, res) => {
