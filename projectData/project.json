@@ -1,0 +1,1969 @@
+{
+  "name": "Balaji",
+  "clientId": "",
+  "phoneNumber": "",
+  "email": "",
+  "currentLocation": "XYZ",
+  "projectName": "ANANDA",
+  "startDate": "2025-01-01",
+  "projectManager": "Naveen",
+  "projectCost": 5000000,
+  "dimension": "30 X 40",
+  "floor": "3",
+  "siteLocation": "123 Project Road, City XYZ",
+  "siteLocationLink": "http://maps.example.com/site123",
+  "architect": "Biplab",
+  "siteSupervisor": "Yashwanth",
+  "status": "ongoing",
+  "package": "essential",
+  "stages": [
+    {
+      "name": "Stage 01",
+      "order": 1,
+      "substages": [
+        {
+          "name": "Substage a1",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 01-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 01-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 02",
+      "order": 2,
+      "substages": [
+        {
+          "name": "Substage 02-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 02-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 02-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 02-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 03",
+      "order": 3,
+      "substages": [
+        {
+          "name": "Substage 03-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 03-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 03-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 03-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 03-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 04",
+      "order": 4,
+      "substages": [
+        {
+          "name": "Substage 04-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 04-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 05",
+      "order": 5,
+      "substages": [
+        {
+          "name": "Substage 05-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 05-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 05-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 06",
+      "order": 6,
+      "substages": [
+        {
+          "name": "Substage 06-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 06-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 06-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 06-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 07",
+      "order": 7,
+      "substages": [
+        {
+          "name": "Substage 07-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 07-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 07-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 07-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 07-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 08",
+      "order": 8,
+      "substages": [
+        {
+          "name": "Substage 08-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 08-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 09",
+      "order": 9,
+      "substages": [
+        {
+          "name": "Substage 09-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 09-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 09-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 10",
+      "order": 10,
+      "substages": [
+        {
+          "name": "Substage 10-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 10-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 10-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 10-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 11",
+      "order": 11,
+      "substages": [
+        {
+          "name": "Substage 11-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 11-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 11-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 11-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 11-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 12",
+      "order": 12,
+      "substages": [
+        {
+          "name": "Substage 12-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 12-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 13",
+      "order": 13,
+      "substages": [
+        {
+          "name": "Substage 13-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 13-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 13-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 14",
+      "order": 14,
+      "substages": [
+        {
+          "name": "Substage 14-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 14-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 14-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 14-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 15",
+      "order": 15,
+      "substages": [
+        {
+          "name": "Substage 15-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 15-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 15-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 15-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 15-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 16",
+      "order": 16,
+      "substages": [
+        {
+          "name": "Substage 16-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 16-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 17",
+      "order": 17,
+      "substages": [
+        {
+          "name": "Substage 17-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 17-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 17-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 18",
+      "order": 18,
+      "substages": [
+        {
+          "name": "Substage 18-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 18-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 18-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 18-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 19",
+      "order": 19,
+      "substages": [
+        {
+          "name": "Substage 19-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 19-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 19-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 19-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 19-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 20",
+      "order": 20,
+      "substages": [
+        {
+          "name": "Substage 20-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 20-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 21",
+      "order": 21,
+      "substages": [
+        {
+          "name": "Substage 21-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 21-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 21-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 22",
+      "order": 22,
+      "substages": [
+        {
+          "name": "Substage 22-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 22-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 22-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 22-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 23",
+      "order": 23,
+      "substages": [
+        {
+          "name": "Substage 23-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 23-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 23-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 23-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 23-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 24",
+      "order": 24,
+      "substages": [
+        {
+          "name": "Substage 24-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 24-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 25",
+      "order": 25,
+      "substages": [
+        {
+          "name": "Substage 25-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 25-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 25-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 26",
+      "order": 26,
+      "substages": [
+        {
+          "name": "Substage 26-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 26-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 26-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 26-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 27",
+      "order": 27,
+      "substages": [
+        {
+          "name": "Substage 27-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 27-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 27-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 27-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 27-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 28",
+      "order": 28,
+      "substages": [
+        {
+          "name": "Substage 28-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 28-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 29",
+      "order": 29,
+      "substages": [
+        {
+          "name": "Substage 29-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 29-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 29-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 30",
+      "order": 30,
+      "substages": [
+        {
+          "name": "Substage 30-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 30-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 30-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 30-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 31",
+      "order": 31,
+      "substages": [
+        {
+          "name": "Substage 31-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 31-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 31-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 31-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 31-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 32",
+      "order": 32,
+      "substages": [
+        {
+          "name": "Substage 32-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 32-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 33",
+      "order": 33,
+      "substages": [
+        {
+          "name": "Substage 33-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 33-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 33-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 34",
+      "order": 34,
+      "substages": [
+        {
+          "name": "Substage 34-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 34-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 34-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 34-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Stage 35",
+      "order": 35,
+      "substages": [
+        {
+          "name": "Substage 35-01",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 35-02",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 35-03",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 35-04",
+          "duration": 10,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Substage 35-05",
+          "duration": 12,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "status": "ongoing",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    }
+  ],
+  "createdAt": "2025-01-01",
+  "updatedAt": "2025-01-01"
+}
