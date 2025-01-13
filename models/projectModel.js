@@ -11,7 +11,7 @@ const SubstageSchema = new Schema({
   status: {
     type: String,
     required: true,
-    enum: ["ongoing", "completed", "pending", "delayed"],
+    enum: ["ongoing", "completed", "pending"],
   },
   isManagerProceed: { type: Boolean, default: false },
   isClientProceed: { type: Boolean, default: false },
@@ -25,7 +25,7 @@ const SubstageSchema = new Schema({
 const StageSchema = new Schema({
   name: { type: String, required: true }, // Stage name
   order: { type: Number, required: true }, // Stage order
-  substages: { type: [SubstageSchema], default: [] }, // Array of substages
+  subStages: { type: [SubstageSchema], default: [] }, // Array of substages
 });
 
 // Define the project schema
