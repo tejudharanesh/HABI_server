@@ -20,6 +20,7 @@
     {
       "name": "Architectural Concept Design",
       "order": 1,
+      "category": "design",
       "subStages": [
         {
           "name": "2D Layout (floor plan with furniture layout)",
@@ -56,6 +57,8 @@
     {
       "name": "Soil Testing",
       "order": 2,
+      "category": "preparation",
+
       "subStages": [
         {
           "name": "Site Visit",
@@ -92,6 +95,7 @@
     {
       "name": "3D Architectural Design",
       "order": 3,
+      "category": "design",
       "subStages": [
         {
           "name": "Render layouts",
@@ -141,11 +145,12 @@
       ]
     },
     {
-      "name": "Stage 04",
+      "name": "Interior design",
       "order": 4,
+      "category": "design",
       "subStages": [
         {
-          "name": "Substage 04-01",
+          "name": "2D layout",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -160,7 +165,37 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 04-02",
+          "name": "3D rendered layout, plan elevation, section",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Conceptual 3D exploration",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Rendered Views",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -177,42 +212,13 @@
       ]
     },
     {
-      "name": "Stage 05",
+      "name": "Structural design",
       "order": 5,
+      "category": "design",
       "subStages": [
         {
-          "name": "Substage 05-01",
+          "name": "Structural design",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 05-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 05-03",
-          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -228,57 +234,12 @@
       ]
     },
     {
-      "name": "Stage 06",
+      "name": "Sanction drawings",
       "order": 6,
       "subStages": [
         {
-          "name": "Substage 06-01",
+          "name": "Sanction drawings",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 06-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 06-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 06-04",
-          "duration": 10,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -294,72 +255,13 @@
       ]
     },
     {
-      "name": "Stage 07",
+      "name": "Tender drawings",
       "order": 7,
+      "category": "design",
       "subStages": [
         {
-          "name": "Substage 07-01",
+          "name": "Tender drawings",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 07-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 07-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 07-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 07-05",
-          "duration": 12,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -375,27 +277,14 @@
       ]
     },
     {
-      "name": "Stage 08",
+      "name": "Revised BOQ",
       "order": 8,
+      "category": "preparation",
+
       "subStages": [
         {
-          "name": "Substage 08-01",
+          "name": "Revised BOQ",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 08-02",
-          "duration": 6,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -411,11 +300,13 @@
       ]
     },
     {
-      "name": "Stage 09",
+      "name": "Structural drawings",
       "order": 9,
+      "category": "design",
+
       "subStages": [
         {
-          "name": "Substage 09-01",
+          "name": "Grid layout",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -430,7 +321,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 09-02",
+          "name": "Column layout",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -445,7 +336,67 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 09-03",
+          "name": "Foundation",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Plinth beam",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Slab",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Beam + Column",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Details",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -462,57 +413,14 @@
       ]
     },
     {
-      "name": "Stage 10",
+      "name": "Architectural / Civil layout",
       "order": 10,
+      "category": "design",
+
       "subStages": [
         {
-          "name": "Substage 10-01",
+          "name": "Architectural / Civil layout",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 10-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 10-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 10-04",
-          "duration": 10,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -528,72 +436,14 @@
       ]
     },
     {
-      "name": "Stage 11",
+      "name": "Interior layout",
       "order": 11,
+      "category": "design",
+
       "subStages": [
         {
-          "name": "Substage 11-01",
+          "name": "Interior layout",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 11-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 11-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 11-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 11-05",
-          "duration": 12,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -609,27 +459,12 @@
       ]
     },
     {
-      "name": "Stage 12",
+      "name": "Electrical",
       "order": 12,
       "subStages": [
         {
-          "name": "Substage 12-01",
+          "name": "Electrical",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 12-02",
-          "duration": 6,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -645,42 +480,12 @@
       ]
     },
     {
-      "name": "Stage 13",
+      "name": "Plumbing",
       "order": 13,
       "subStages": [
         {
-          "name": "Substage 13-01",
+          "name": "Plumbing",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 13-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 13-03",
-          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -696,57 +501,13 @@
       ]
     },
     {
-      "name": "Stage 14",
+      "name": "Bhoomi Pujan",
       "order": 14,
+      "category": "preparation",
       "subStages": [
         {
-          "name": "Substage 14-01",
+          "name": "Bhoomi Pujan",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 14-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 14-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 14-04",
-          "duration": 10,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -762,72 +523,13 @@
       ]
     },
     {
-      "name": "Stage 15",
+      "name": "Site clearance",
       "order": 15,
+      "category": "preparation",
       "subStages": [
         {
-          "name": "Substage 15-01",
+          "name": "Site clearance",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 15-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 15-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 15-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 15-05",
-          "duration": 12,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -843,11 +545,13 @@
       ]
     },
     {
-      "name": "Stage 16",
+      "name": "Site preparation",
       "order": 16,
+      "category": "preparation",
+
       "subStages": [
         {
-          "name": "Substage 16-01",
+          "name": "Surveying grid marking",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -862,7 +566,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 16-02",
+          "name": "Foundation marking",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -879,11 +583,12 @@
       ]
     },
     {
-      "name": "Stage 17",
+      "name": "Excavation stage",
       "order": 17,
+      "category": "civil",
       "subStages": [
         {
-          "name": "Substage 17-01",
+          "name": "Excavation",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -898,7 +603,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 17-02",
+          "name": "Grid marking",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -913,7 +618,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 17-03",
+          "name": "Column marking",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -930,11 +635,13 @@
       ]
     },
     {
-      "name": "Stage 18",
+      "name": "Foundation stage",
       "order": 18,
+      "category": "civil",
+
       "subStages": [
         {
-          "name": "Substage 18-01",
+          "name": "Shuttering - Base",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -949,7 +656,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 18-02",
+          "name": "Bar bending  - Base",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -964,7 +671,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 18-03",
+          "name": "Concreting - Base",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -979,8 +686,83 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 18-04",
-          "duration": 10,
+          "name": "Shuttering - Pedestal",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Bar bending  - Pedestal",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Concreting - Pedestal",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Shuttering - Column",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Bar bending  - Column",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Concreting - Column",
+          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -996,11 +778,36 @@
       ]
     },
     {
-      "name": "Stage 19",
+      "name": "Sump construction",
       "order": 19,
+      "category": "civil",
+
       "subStages": [
         {
-          "name": "Substage 19-01",
+          "name": "Sump construction",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Earth work",
+      "order": 20,
+      "category": "civil",
+
+      "subStages": [
+        {
+          "name": "Back filling",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1015,7 +822,45 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 19-02",
+          "name": "Compaction",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        }
+      ]
+    },
+    {
+      "name": "Plinth work",
+      "order": 21,
+      "category": "civil",
+
+      "subStages": [
+        {
+          "name": "Plinth marking",
+          "duration": 4,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Stone watering",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -1030,7 +875,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 19-03",
+          "name": "Bar-bending (Plinth + Sump)",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -1045,8 +890,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 19-04",
-          "duration": 10,
+          "name": "Shuttering (Plinth + Sump)",
+          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1060,29 +905,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 19-05",
-          "duration": 12,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        }
-      ]
-    },
-    {
-      "name": "Stage 20",
-      "order": 20,
-      "subStages": [
-        {
-          "name": "Substage 20-01",
-          "duration": 4,
+          "name": "Concreting (Plinth + Sump)",
+          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1096,29 +920,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 20-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        }
-      ]
-    },
-    {
-      "name": "Stage 21",
-      "order": 21,
-      "subStages": [
-        {
-          "name": "Substage 21-01",
-          "duration": 4,
+          "name": "Removal of shuttering (Plinth + Sump)",
+          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1132,8 +935,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 21-02",
-          "duration": 6,
+          "name": "Back filling",
+          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1147,7 +950,22 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 21-03",
+          "name": "Termite treatment",
+          "duration": 8,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "PCC 40 mm",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -1166,6 +984,8 @@
     {
       "name": "Stage 22",
       "order": 22,
+      "category": "civil",
+
       "subStages": [
         {
           "name": "Substage 22-01",
@@ -1230,11 +1050,13 @@
       ]
     },
     {
-      "name": "Stage 23",
+      "name": "Electrical",
       "order": 23,
+      "category": "electrical",
+
       "subStages": [
         {
-          "name": "Substage 23-01",
+          "name": "Grove cutting",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1249,7 +1071,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 23-02",
+          "name": "Electrical conduct & pipe installation",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -1264,7 +1086,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 23-03",
+          "name": "Wiring",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -1279,7 +1101,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 23-04",
+          "name": "Electrical plates & switches installation",
           "duration": 10,
           "progress": 0,
           "photos": [],
@@ -1294,7 +1116,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 23-05",
+          "name": "MCB installation",
           "duration": 12,
           "progress": 0,
           "photos": [],
@@ -1311,11 +1133,13 @@
       ]
     },
     {
-      "name": "Stage 24",
+      "name": "Plumbing",
       "order": 24,
+      "category": "plumbing",
+
       "subStages": [
         {
-          "name": "Substage 24-01",
+          "name": "Grove cutting",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1330,7 +1154,37 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 24-02",
+          "name": "Plumbing pipe installation",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Valve installation | shower mixer",
+          "duration": 6,
+          "progress": 0,
+          "photos": [],
+          "videos": [],
+          "documents": [],
+          "status": "pending",
+          "isManagerProceed": false,
+          "isClientProceed": false,
+          "isDelayed": false,
+          "delayReason": "",
+          "delayDuration": 0,
+          "isDelayProceed": false
+        },
+        {
+          "name": "Tap & fixture installation",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -1347,42 +1201,13 @@
       ]
     },
     {
-      "name": "Stage 25",
+      "name": "Plastering",
       "order": 25,
+      "category": "civil",
       "subStages": [
         {
-          "name": "Substage 25-01",
+          "name": "Plastering",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 25-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 25-03",
-          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1398,11 +1223,12 @@
       ]
     },
     {
-      "name": "Stage 26",
+      "name": "Doors & windows installation",
       "order": 26,
+      "category": "doors",
       "subStages": [
         {
-          "name": "Substage 26-01",
+          "name": "Door frame installation",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1417,7 +1243,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 26-02",
+          "name": "Door shutter installation",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -1432,7 +1258,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 26-03",
+          "name": "Door fixture installation",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -1447,7 +1273,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 26-04",
+          "name": "UPVC window installation",
           "duration": 10,
           "progress": 0,
           "photos": [],
@@ -1464,72 +1290,13 @@
       ]
     },
     {
-      "name": "Stage 27",
+      "name": "Flooring",
       "order": 27,
+      "category": "flooring",
       "subStages": [
         {
-          "name": "Substage 27-01",
+          "name": "Flooring (marble, Tiles and granite installation)",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 27-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 27-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 27-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 27-05",
-          "duration": 12,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1545,27 +1312,13 @@
       ]
     },
     {
-      "name": "Stage 28",
+      "name": "Grill installation",
       "order": 28,
+      "category": "grill",
       "subStages": [
         {
-          "name": "Substage 28-01",
+          "name": "Grill installation",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 28-02",
-          "duration": 6,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1581,11 +1334,12 @@
       ]
     },
     {
-      "name": "Stage 29",
+      "name": "Internal painting",
       "order": 29,
+      "category": "painting",
       "subStages": [
         {
-          "name": "Substage 29-01",
+          "name": "Primer coat",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1600,7 +1354,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 29-02",
+          "name": "Putty coat",
           "duration": 6,
           "progress": 0,
           "photos": [],
@@ -1615,7 +1369,7 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 29-03",
+          "name": "Painting",
           "duration": 8,
           "progress": 0,
           "photos": [],
@@ -1632,11 +1386,12 @@
       ]
     },
     {
-      "name": "Stage 30",
+      "name": "External painting",
       "order": 30,
+      "category": "painting",
       "subStages": [
         {
-          "name": "Substage 30-01",
+          "name": "Primer coat",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1651,38 +1406,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 30-02",
+          "name": "Painting",
           "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 30-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 30-04",
-          "duration": 10,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1698,11 +1423,12 @@
       ]
     },
     {
-      "name": "Stage 31",
+      "name": "grill painting",
       "order": 31,
+      "category": "painting",
       "subStages": [
         {
-          "name": "Substage 31-01",
+          "name": "primer",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1717,53 +1443,8 @@
           "isDelayProceed": false
         },
         {
-          "name": "Substage 31-02",
+          "name": "Enamel painting, Oil painting, SS polish",
           "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 31-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 31-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 31-05",
-          "duration": 12,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1779,27 +1460,13 @@
       ]
     },
     {
-      "name": "Stage 32",
+      "name": "Compound wall",
       "order": 32,
+      "category": "civil",
       "subStages": [
         {
-          "name": "Substage 32-01",
+          "name": "Compound wall",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 32-02",
-          "duration": 6,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1815,42 +1482,13 @@
       ]
     },
     {
-      "name": "Stage 33",
+      "name": "Ramp construction",
       "order": 33,
+      "category": "civil",
       "subStages": [
         {
-          "name": "Substage 33-01",
+          "name": "Ramp construction",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 33-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 33-03",
-          "duration": 8,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1866,57 +1504,13 @@
       ]
     },
     {
-      "name": "Stage 34",
+      "name": "Main gate installation",
       "order": 34,
+      "category": "finishing",
       "subStages": [
         {
-          "name": "Substage 34-01",
+          "name": "Main gate installation & painting",
           "duration": 4,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 34-02",
-          "duration": 6,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 34-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 34-04",
-          "duration": 10,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1932,11 +1526,12 @@
       ]
     },
     {
-      "name": "Stage 35",
+      "name": "Final check by client & architect",
       "order": 35,
+      "category": "finishing",
       "subStages": [
         {
-          "name": "Substage 35-01",
+          "name": "Final check by client & architect",
           "duration": 4,
           "progress": 0,
           "photos": [],
@@ -1949,10 +1544,17 @@
           "delayReason": "",
           "delayDuration": 0,
           "isDelayProceed": false
-        },
+        }
+      ]
+    },
+    {
+      "name": "Key handover",
+      "order": 36,
+      "category": "finishing",
+      "subStages": [
         {
-          "name": "Substage 35-02",
-          "duration": 6,
+          "name": "Key handover",
+          "duration": 4,
           "progress": 0,
           "photos": [],
           "videos": [],
@@ -1964,40 +1566,17 @@
           "delayReason": "",
           "delayDuration": 0,
           "isDelayProceed": false
-        },
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "order": 37,
+      "category": "finishing",
+      "subStages": [
         {
-          "name": "Substage 35-03",
-          "duration": 8,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 35-04",
-          "duration": 10,
-          "progress": 0,
-          "photos": [],
-          "videos": [],
-          "documents": [],
-          "status": "pending",
-          "isManagerProceed": false,
-          "isClientProceed": false,
-          "isDelayed": false,
-          "delayReason": "",
-          "delayDuration": 0,
-          "isDelayProceed": false
-        },
-        {
-          "name": "Substage 35-05",
-          "duration": 12,
+          "name": "Documents",
+          "duration": 4,
           "progress": 0,
           "photos": [],
           "videos": [],

@@ -25,6 +25,7 @@ const SubstageSchema = new Schema({
 const StageSchema = new Schema({
   name: { type: String, required: true }, // Stage name
   order: { type: Number, required: true }, // Stage order
+  category: { type: String, required: true },
   subStages: { type: [SubstageSchema], default: [] }, // Array of substages
 });
 

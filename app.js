@@ -25,4 +25,4 @@ connectDB();
 app.use(cors(corsOptions)); // Apply CORS middleware
 app.use("/api", routes);
 
-export default app; // Use 'export default' instead of module.exports
+export default app; // Use 'export default' instead of module.export
