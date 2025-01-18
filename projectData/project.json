@@ -236,6 +236,8 @@
     {
       "name": "Sanction drawings",
       "order": 6,
+      "category": "design",
+
       "subStages": [
         {
           "name": "Sanction drawings",
@@ -461,6 +463,8 @@
     {
       "name": "Electrical",
       "order": 12,
+      "category": "design",
+
       "subStages": [
         {
           "name": "Electrical",
@@ -482,6 +486,8 @@
     {
       "name": "Plumbing",
       "order": 13,
+      "category": "design",
+
       "subStages": [
         {
           "name": "Plumbing",
