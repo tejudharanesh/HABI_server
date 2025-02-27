@@ -1,6 +1,4 @@
 import express from "express";
-import { createUser, getProfile } from "../controllers/userController.js"; // Include .js extension
-import { checkUserExists } from "../middleware/userMiddleware.js";
 
 const userRouter = express.Router();
 

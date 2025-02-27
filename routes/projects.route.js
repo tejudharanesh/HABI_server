@@ -2,7 +2,6 @@ import express from "express";
 import fs from "fs/promises";
 import User from "../models/userModel.js";
 import Project from "../models/projectModel.js";
-
 import { protectedRoute } from "../middleware/authMiddleware.js";
 
 const router = express.Router();

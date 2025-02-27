@@ -4,8 +4,7 @@ export const getAllMeetings = async (req, res) => {
   try {
     const currentDate = new Date();
     // Find all meetings with a date greater than the current date
-    const upcomingMeetings = await Meeting.find({
-    });
+    const upcomingMeetings = await Meeting.find({});
     // Sort meetings by date and time
     upcomingMeetings.sort((a, b) => {
       const dateA = new Date(`${a.date} ${a.time}`);
@@ -119,6 +118,7 @@ export const deleteClientMeeting = async (req, res) => {
     const deletedMeeting = await Meeting.findOneAndDelete({
       _id: meetingId,
     });
+    ``;
 
     if (!deletedMeeting) {
       return res
